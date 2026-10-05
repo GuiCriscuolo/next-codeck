@@ -1,0 +1,87 @@
+version: "1.0"
+system: "Next Codeck"
+source: "rules/funcoes-slides.xlsx"
+master: "template/codeck-template.pptx"
+
+rules:
+  format: "16:9"
+  editable: true
+  approved_icons_only: true
+  approved_photos_only: true
+  preserve_master_identity: true
+  prefer_native_powerpoint_objects: true
+
+semantic_exclusions:
+  historical_timeline:
+    use_for: "chronological historical evolution"
+    do_not_use_for:
+      - process
+      - methodology
+      - customer_journey
+      - operational_flow
+  process_roadmap:
+    use_for: "process, methodology, journey, workflow or conceptual sequence"
+  product_roadmap:
+    use_for: "future product releases, features or initiatives by period"
+
+slides:
+  1: {function: "Logo", layout: "Cover"}
+  2: {function: "Cover", layout: "Simple-Cover-01"}
+  3: {function: "Agenda", layout: "Agenda"}
+  4: {function: "Divider", layout: "Divider-01"}
+  5: {function: "Flexible Content", layout: "Title-only"}
+  6: {function: "Text", layout: "Title and Content"}
+  7: {function: "Text + Small Image", layout: "Image + Content 01"}
+  8: {function: "Text + Small Image", layout: "Image + Content 02"}
+  9: {function: "2 Highlights", layout: "Image + 2 icons"}
+  10: {function: "3 Highlights", layout: "Image + 3 icons"}
+  11: {function: "Description + 2 Highlights", layout: "Image + description + 2 icons"}
+  12: {function: "Description + 3 Highlights", layout: "Image + description + 3 icons"}
+  13: {function: "3 Feature Cards", layout: "3 icons + content"}
+  14: {function: "4 Feature Cards", layout: "4 icons + content"}
+  15: {function: "5 Feature Cards", layout: "5 icons + content"}
+  16: {function: "6 Feature Cards", layout: "6 icons + content"}
+  17: {function: "7 Feature Cards", layout: "7 icons + content"}
+  18: {function: "8 Feature Cards", layout: "8 icons + content"}
+  19: {function: "Description + 2 Highlights", layout: "Description + 2 items"}
+  20: {function: "Description + 3 Highlights", layout: "Description + 3 items"}
+  21: {function: "Description + 4 Highlights", layout: "1_Description + 4 items"}
+  22: {function: "Description + 5 Highlights", layout: "Description + 5 items"}
+  23: {function: "Description + 6 Highlights", layout: "Description + 6 items"}
+  24: {function: "Speaker Profile", layout: "profile"}
+  25: {function: "Two Speakers", layout: "2 people"}
+  26: {function: "3 Team Members", layout: "3 people"}
+  27: {function: "4 Team Members", layout: "4 people"}
+  28: {function: "5 Team Members", layout: "5 people"}
+  29: {function: "6 Team Members", layout: "6 people"}
+  30: {function: "Comparison Blocks", layout: "2 Columns Subtitle Content"}
+  31: {function: "Two Text Columns", layout: "2 Text Grid"}
+  32: {function: "Three Bullet Points", layout: "3 Text Grid"}
+  33: {function: "Four Bullet Points", layout: "4 Text Grid"}
+  34: {function: "Five Bullet Points", layout: "5 Text Grid"}
+  35: {function: "Six Bullet Points", layout: "1_6 Text Grid"}
+  36: {function: "Chart", layout: "Content + Chart"}
+  37: {function: "Chart + Analysis", layout: "2 icon Content + Chart"}
+  38: {function: "Chart + Analysis", layout: "3 icon Content + Chart"}
+  39: {function: "Full Chart", layout: "one chart"}
+  40: {function: "Dual Charts", layout: "2 comparison chart"}
+  41: {function: "Historical Timeline", layout: "3 items timeline", events: 3}
+  42: {function: "Historical Timeline", layout: "4 items timeline", events: 4}
+  43: {function: "Historical Timeline", layout: "5 items timeline", events: 5}
+  44: {function: "Historical Timeline", layout: "6 items timeline", events: 6}
+  45: {function: "Historical Timeline", layout: "7 items timeline", events: 7}
+  46: {function: "Historical Timeline", layout: "1_8 items timeline", events: 8}
+  47: {function: "Historical Timeline", layout: "9 items timeline", events: 9}
+  48: {function: "Historical Timeline", layout: "10 items timeline", events: 10}
+  49: {function: "Table + Summary", layout: "Content + table"}
+  50: {function: "Table", layout: "table"}
+  51: {function: "Four Information Cards", layout: "Diagram 4 Quadrant"}
+  52: {function: "Quote", layout: "Quote"}
+  53: {function: "Quote + Image", layout: "Quote image"}
+  54: {function: "Organization Chart", layout: "Flexible Content"}
+  55: {function: "Numbers Infographic", layout: "Flexible Content"}
+  56: {function: "Demographic Infographic", layout: "Flexible Content"}
+  57: {function: "Process Roadmap", layout: "Flexible Content"}
+  58: {function: "Product Roadmap", layout: "Flexible Content"}
+  59: {function: "Product Comparison", layout: "Flexible Content"}
+  60: {function: "Closing / Contact", layout: "Call to Action"}
